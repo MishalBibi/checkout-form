@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+      <br>
+        
+    <center><img class=" abc" src="bootstrap-solid.svg" alt="" width="72" height="72"></center>
+ <br>
+    <center><h2>Checkout form</h2></center>
+    
+    <center><p class="lead" >Below is an example form built entirely with Bootstrap's form controls. Each required form group has a 
+  validation state that can be triggered by attempting to submit the form without completing it.</p></center>
+    </div>
+<br>
+<br>
+  <div class="container">
+    <div class="row">
+        <!--card start-->
+        <div class="col-md-8">
+            
+                   <h5> &nbsp;&nbsp;&nbsp;Billing address</h5>
+                    <!--container start-->
+                    <form>
+                      <div class="container">
+                       <div class="row">
+                           <div class="col-md-6 mb-4">
+                             <label for="First Name">First Name</label><br>
+                              <input type="text" style="width: 250px; height: 40px;" required>
+                           
+                           <div class="invalid-feedback">
+                             Valid first name is required.
+                           </div>
+                         </div>
+                           <div class="col-md-6 mb-4">
+                               <label for="First Name">Last Name</label><br>
+                                <input type="text" style="width: 250px; height: 40px;"  required>
+                           </div>
+                       </div>
+                       <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                       <div class="input-group mb-4">
+                         <div class="input-group-prepend">
+                           <div class="input-group-text">@</div>
+                         </div>
+                         
+                        
+                         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                       </div>
+                       <div class="form-group">
+                         <label for="exampleInputEmail1">Email (optional)</label>
+                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="You@example.com">
+                       </div>
+ 
+                       <div class="form-group">
+                         <label for="inputAddress">Address</label>
+                         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                       </div>
+                       <div class="form-group">
+                         <label for="inputAddress2">Address 2 (optional)</label>
+                         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment or suite">
+                       </div>
+                       <div class="row">
+                         <div class="col-md-4 mb-3">
+                           <label for="country">Country</label><br>
+                           <select id="country" style="width: 200px; height: 40px;" required>
+                             <option value="">Choose...</option>
+                             <option>United States</option>
+                           </select>
+                           <div class="invalid-feedback">
+                             Please select a valid country.
+                           </div>
+                         </div>
+                         <div class="col-md-4 mb-3">
+                          <label for="state">State</label><br>
+                          <select  id="state" style="width: 200px; height: 40px;" required>
+                            <option value="">Choose...</option>
+                            <option>California</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please provide a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                          <label for="zip">Zip</label>
+                          <input type="text"  id="zip" style="width: 200px; height: 40px;" placeholder="" required>
+                          <div class="invalid-feedback">
+                            Zip code required.
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="checkbox">
+                      <input type="checkbox" href="#">&nbsp;Shipping address is the same as my billing address<br>
+                      <input type="checkbox" href="#">&nbsp;Save this information for next time<br>
+                    </div>
+                       <hr>
+                       <h3>Payment</h3>
+                       <div class="radio">
+                        <input   type="radio" checked required>&nbsp;Credit Card<br>
+                        <input type="radio" required>&nbsp;Debit Card<br>
+                        <input type="radio" required>&nbsp;Paypal<br>
+                     </div>
+                     <div class="row">
+                      <div class="col-md-6 mb-3 mt-3">
+                       <label for="Name on card">Name on Card</label><br>
+                       <input type="text" style="width: 250px; height: 40px;" required>
+                     
+                      </div>
+                      <div class="col-md-6 mb-3 mt-3">
+                       <label for="Credit Card Number">Credit Card Number</label><br>
+                       <input type="text" style="width: 250px; height: 40px;" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                     <label for="Expiration">Expiration</label><br>
+                     <input type="text" style="width:150px; height: 40px;" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                     <label for="CVV">CVV</label><br>
+                     <input type="text" style="width: 150px; height: 40px;" required>
+
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+                <div class="container">
+                    
+
+                   <button class="btn btn-primary" style="height: 50px; border-radius: 30px 10px 30px 10px; width: 600px;" ><p style="font-size: 22px;">Continue to Checkout</p></button>
+                 </div>
+                 </div>
+                </form>
+                 <!--container end-->
+                   
+                   
+           </div>
+           <!--card end-->
+
+           <!--card start-->
+           <div class="col-md-4 mb-4">
+            <h5>Your Cart &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</h5>
+            
+            <div class="card">
+             <div class="card-body">
+                 <h6>Product Name  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$12</h6>
+               <small class="text-muted">Brief description</small>
+              
+
+             </div>
+
+           </div>
+           <div class="card">
+            <div class="card-body">
+              <h6>Second Product &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$8</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6>Third Item &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$5</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6 style="color: limegreen;">Promo Code &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-$5</h6>
+              <small style="color: limegreen;">EXAMPLECODE</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h6>Total(USD) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20</h6>
+              
+            </div>
+          </div>
+                    
+          <div class="card mt-3">
+            <div class="row">
+                <div class="col-md-6 mt-3 mb-4 ml-2">
+                  <input type="text" class="form-control"  placeholder="Promo Code">
+                  
+                  
+                </div>
+                <div class="col-md-3 mt-3 ">
+                  <button type="submit" class="btn btn-secondary">Redeem</button>
+
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+       <!--CARD end-->
+       
+   
+</div>
+
+<!--Footer start-->
+<div class="footer">
+  <br>
+  <br>
+  <br>
+  <center><p style="color: grey;">© 2017-2018 Company Name</p>
+<span><a href="#">Privacy</a><a href="#">Term</a>  <a href="#">Support</a></span>
+  </center>
+
+</div>
+      <!--Footer end-->
+
+</div>
+    </div>
+
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
